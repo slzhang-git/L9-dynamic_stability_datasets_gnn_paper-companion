@@ -23,3 +23,8 @@ Afterwards the script train_ArmaNet.py or train_ArmaNet.ipynb can be executed.
 
 
 In case of any problems or questions, do not hesitate to contact us.
+
+# File structure
+--The mainfunction file: "/training_model/train_ArmaNet.py"
+
+--New folder will be generated to contain the generated grid
