@@ -190,31 +190,16 @@ for epoch in range(1,epochs):
 print("finished")
 
 
-fig, ax = plt.subplots(1, 1)
-ax.plot(test_R2_all_epochs, label="test")
-ax.plot(train_R2_all_epochs, label="train")
-ax.set_ylabel('$R^2$', fontsize=18)
-ax.set_xlabel('epochs', fontsize=18)
-ax.set_xlim([1, epochs])
-# ax.set_xlim=[5,8]
-# ax.set_ylim=[0,1]
-ax.set_ylim([0, 1])
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
+plt.plot(test_R2_all_epochs, label="test")
+plt.plot(train_R2_all_epochs, label="train")
+plt.ylabel('$R^2$')
+plt.xlabel('epochs')
 plt.legend()
 plt.show()
 
-
-fig1, ax1 = plt.subplots(1, 1)
-ax1.plot(test_accu_all_epochs, label="test")
-ax1.plot(train_accu_all_epochs, label="train")
-ax1.set_ylabel('Accuracy (%)', fontsize=18)
-ax1.set_xlabel('epochs', fontsize=18)
-ax1.set_xlim([1, epochs])
-# ax.set_xlim=[5,8]
-# ax.set_ylim=[0,1]
-ax1.set_ylim([0, 1])
-plt.xticks(fontsize=14)
-plt.yticks(fontsize=14)
+plt.plot(test_accu_all_epochs, label="test")
+plt.plot(train_accu_all_epochs, label="train")
+plt.ylabel('Accuracy')
+plt.xlabel('epochs')
 plt.legend()
 plt.show()
